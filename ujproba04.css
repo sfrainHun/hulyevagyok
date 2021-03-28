@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dancingscript/v16/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7B1i03Sup8.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+h1::selection {
+    color: white;
+    background-color: pink;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+    border: ivory 1px collapse;
+    background: linear-gradient(to right, white, pink);
+}
+
+.header {
+    display: flex;
+    border: ivory 1px collapse;
+    background: linear-gradient(to left, white, pink);
+    height: 8rem;
+    align-items: center;
+    justify-content: center;
+}
+
+h1,
+a,
+h5 {
+    font-size: 2rem;
+    color: white;
+    font-family: 'Dancing Script';   
+    text-shadow: 1px 1px 2px grey, 0 0 25px red, 0 0 5px darkblue;    
+}
+
+h1 {
+    font-size: 40px;
+    letter-spacing: 5px;
+    word-spacing: 10px;  
+}
+
+.header2 {
+    display: flex;
+    border: ivory 1px collapse;
+    background: linear-gradient(to left, white,pink);
+    align-items: baseline;
+    justify-content: center; 
+}
+
+td {
+    border: ivory 3px inset;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100px;
+    text-align: center;
+}
+
+.mains {
+    border: ivory 1px collapse;
+    background: linear-gradient(to left, white,pink);
+    margin-top: 20px;   
+}
+
+h2 {
+    font-family: 'Dancing Script';
+    padding: 100px 0px 0px 150px;
+    font-size: 35px;
+    color: grey;
+}
+
+p {
+    font-family: 'Dancing Script';
+    padding: 10px 100px 100px 100px;
+    font-size: 25px;
+    letter-spacing: 3px;
+    line-height: 22px;
+    word-spacing: 3px;
+    color: grey;
+    text-shadow: 1px 1px 3px pink, 0 0 22px pink;
+}
+
+.box1 {
+    position: relative;
+    left: 60%;
+    bottom: 20%;
+    border: 2px pink solid;
+    width: 500px;
+    height: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    border-radius: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+}
+
+div.box1:hover {
+    overflow: visible;
+    animation: mozdulj 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mozdulj {
+    from {left: 70%;}
+    to   {left: 45%;}
+}
+
+div.footer1 {
+    width: 400px;
+    height: 200px;
+    background: pink;
+    animation: babus 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+}
+
+@keyframes babus {
+    from {left: 0%;}
+    to {left: 15%; background-color: white;}
+}
+
